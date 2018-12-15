@@ -1,0 +1,257 @@
+/* This (along with the annotated footer properties) is necessary for creating 
+a sticky footer */
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    position: relative;
+}
+
+.main-container {
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px; /* height of your footer */
+}
+
+/* Main styling across the site */
+body {
+    background-color: #ffffff;
+    background-image: url("../../assets/images/pink\ dust.png");
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    float: left;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    margin: 0;
+    float: left;
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+hr {
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+}
+
+/* This styles the top bar containing the name and navigation
+menu */
+.top-bar {
+    background-color: #ffffff;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 40px;
+    box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+.top-content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+}
+
+.nav-menu li {
+    float: left;
+}
+
+.nav-menu li a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    color: #777777;
+}
+
+.menu-dividers {
+    margin-top: 17px;
+    float: left;
+    width: 1px;
+    height: 15px;
+    background-color: rgb(212, 212, 212);
+}
+
+/* This styles the middle section on each page */
+.middle-section {
+    background-color: #ffffff;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.middle-content {
+    padding: 30px;
+}
+
+.middle-content img {
+    float: left;
+    margin: 0 20px 5px 0;
+}
+
+.middle-content p {
+    display: inline;
+}
+
+/* ------------This is the styling specific to the Portfolio page------------ */
+.project-item {
+    width: 180px;
+    height: auto;
+    float:left;
+    position: relative;
+    margin: 20px;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 20%;
+    width: 200px;
+    height: 40px;
+    background-color: #4aaaa5; 
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-style: bold;
+    padding-top: 14px;
+    margin: 0 auto;
+  }
+
+  .project-item .image-text:hover {
+      background-color: #555;
+  }
+
+/* ------------This is the styling specific to the Contact page------------ */
+.input-field {
+    width: 100%;
+    padding: 8px;
+    margin: 8px;
+    margin-bottom: 10px;
+}
+
+#message-field {
+    padding: 20px; 
+    width: 100%;
+    height: 150px;
+    resize: vertical;
+    overflow: auto;
+    margin: 8px;
+}
+
+#submit-button {
+    width: 100px;
+    height: 40px;
+    background-color: #4aaaa5; 
+    text-align: center;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin: 10px 0 0 6px;
+}
+
+/* This styles the footer section on each page */
+footer {
+    background-color: #666666;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px -10px #4aaaa5;
+    position: absolute; /*Ensures the footer will remain at the bottom */
+    bottom: 0; /*Places footer at the bottom */
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 640px) {
+    .top-bar {
+        background-color: #ffffff;
+        margin: 0 auto;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 40px;
+        box-shadow: 1px 1px 1px 1px #ccc;
+    }
+    
+    .top-content {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    
+    .nav-menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        float: right;
+        text-align: center;
+    }
+    
+    .nav-menu li {
+        float: left;
+    }
+    
+    .nav-menu li a {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+        color: #777777;
+    }
+    
+    .menu-dividers {
+        margin-top: 17px;
+        float: left;
+        width: 1px;
+        height: 15px;
+        background-color: rgb(212, 212, 212);
+    }
+}
+
+
